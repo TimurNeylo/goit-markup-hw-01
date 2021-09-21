@@ -20,7 +20,7 @@
     <header>
         <div class="container page-header">
             <a href=""><span class="logo">Web</span><span class="logo-black">Studio</span></a>
-            <nav>
+            <nav class="main-nav">
                 <ul class="site-nav">
                     <li class="site-nav-item"><a href="" class="current">Студия</a></li>
                     <li class="site-nav-item"><a href="./portfolio.html">Портфолио</a></li>
@@ -40,13 +40,15 @@
     <main>
         <!--Герой-->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="hero-button">Заказать услугу</button>
+            </div>
         </section>
         <!--Наши преимущества-->
-        <section class="section neg-margin">
+        <section class="section">
             <div class="container">
-                <h2 class="section-title add-title">наши преимущества</h2>
+                <h2 class="section-title visually-hidden">наши преимущества</h2>
                 <ul class="features">
                     <li class="feature-item">
                         <h3 class="feature-title">Внимание к деталям</h3>
@@ -86,29 +88,37 @@
             </div>
         </section>
         <!--Наша команда-->
-        <section class="section">
+        <section class="section sec-color">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list-item">
                         <img width="270" src="./images/team-card-1.jpg" alt="Игорь Демьяненко">
-                        <h3 class="card-title">Игорь Демьяненко</h3>
-                        <p class="card-text">Product Designer</p>
+                        <div class="card-content">
+                            <h3 class="card-title">Игорь Демьяненко</h3>
+                            <p class="card-text">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-list-item">
                         <img width="270" src="./images/team-card-2.jpg" alt="Ольга Репина">
-                        <h3 class="card-title">Ольга Репина</h3>
-                        <p class="card-text">Frontend Developer</p>
+                        <div class="card-content">
+                            <h3 class="card-title">Ольга Репина</h3>
+                            <p class="card-text">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-list-item">
                         <img width="270" src="./images/team-card-3.jpg" alt="Николай Тарасов">
-                        <h3 class="card-title">Николай Тарасов</h3>
-                        <p class="card-text">Marketing</p>
+                        <div class="card-content">
+                            <h3 class="card-title">Николай Тарасов</h3>
+                            <p class="card-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-list-item">
                         <img width="270" src="./images/team-card-4.jpg" alt="Михаил Ермаков">
-                        <h3 class="card-title">Михаил Ермаков</h3>
-                        <p class="card-text">UI Designer</p>
+                        <div class="card-content">
+                            <h3 class="card-title">Михаил Ермаков</h3>
+                            <p class="card-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -118,10 +128,8 @@
         <div class="container page-footer">
             <a href="" class="logo-footer"><span class="logo">Web</span><span class="logo-white">Studio</span></a>
             <address class="adress">
+                <p class="post-adreess">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul>
-                    <li class="adress-item">
-                        <p class="post-adreess">г. Киев, пр-т Леси Украинки, 26</p>
-                    </li>
                     <li class="adress-item"><a href="mailto:info@example.com" class="email-footer">info@example.com</a>
                     </li>
                     <li class="adress-item"><a href="tel:+380991111111" class="phone-footer">+38 099 111 11 11</a></li>

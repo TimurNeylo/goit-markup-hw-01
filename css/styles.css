@@ -64,6 +64,10 @@ img {
   max-width: 100%;
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* Оформление хедера */
 
 .container {
@@ -79,8 +83,6 @@ img {
 .page-header {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -124,6 +126,9 @@ img {
 .site-nav {
   display: flex;
   /* outline: 1px solid green; */
+}
+
+.main-nav {
   margin-left: 93px;
 }
 
@@ -163,20 +168,24 @@ img {
 
 /* Дополнительные заголовки */
 
-.add-title {
-  height: 0px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
   overflow: hidden;
-  /* display: none; */
-  /* visibility: hidden; */
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 /* Оформление героя */
 
 .hero {
-  width: 1600px;
+  /* width: 1600px; */
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 452px;
+  padding: 200px 0px;
   text-align: center;
   background-color: var(--bcg-hero-footer-color);
 
@@ -185,6 +194,9 @@ img {
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -224,14 +236,12 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
 
   /* outline: 4px solid red; */
 }
 
-.neg-margin {
-  margin-bottom: -94px;
+.section:nth-child(2) {
+  padding-bottom: 0px;
 }
 
 .features {
@@ -289,12 +299,22 @@ img {
 
 /* Оформление секции Наша команда */
 
+.sec-color {
+  background-color: #f5f4fa;
+}
+
 .team-list {
   display: flex;
 }
 
 .team-list-item {
   margin-right: var(--main-gap);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-item:last-child {
+  margin-right: 0px;
 }
 
 .card-title {
@@ -304,7 +324,6 @@ img {
   line-height: 1.19;
   text-align: center;
 
-  margin-top: var(--main-gap);
   margin-bottom: var(--secondary-gap);
 }
 
@@ -316,16 +335,22 @@ img {
   text-align: center;
 }
 
+.card-content {
+  padding-top: var(--main-gap);
+  padding-bottom: var(--main-gap);
+}
+
 /* Офлрмление футера */
 
-.page-footer {
-  width: 1600px;
+footer {
   padding-top: 60px;
-  padding-bottom: 71px;
+  padding-bottom: 60px;
   padding-left: 215px;
-
   background-color: var(--bcg-hero-footer-color);
 }
+
+/* .page-footer {
+} */
 
 .logo-footer {
   display: block;
@@ -358,6 +383,7 @@ address {
 }
 
 .post-adreess {
+  margin-bottom: 7.78px;
   color: #ffffff;
 }
 
