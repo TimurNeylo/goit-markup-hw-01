@@ -5,7 +5,8 @@
 
 цвет фона основной (секций) #F5F4FA;
 цвет фона героя и футера #2F303A;
-цвет фона хедера и фона карточек #FFFFFF
+цвет фона хедера и фона карточек #FFFFFF;
+цвет иконок #AFB1B8
  */
 
 :root {
@@ -13,6 +14,7 @@
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
   --bcg-hero-footer-color: #2f303a;
+  --icon-color: #afb1b8;
   --main-gap: 30px;
   --secondary-gap: 10px;
 }
@@ -154,6 +156,7 @@ header {
 .email,
 .phone {
   display: flex;
+  align-items: center;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -224,7 +227,7 @@ header {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/hero.jpg");
+    url("../images/hero.jpg");
   background-repeat: no-repeat;
   max-width: 1600px;
   background-color: var(--bcg-hero-footer-color);
@@ -334,6 +337,7 @@ header {
   width: 270px;
   height: 120px;
   margin-bottom: var(--main-gap);
+  background-color: #f5f4fa;
 }
 
 .feature-item-icon:not(last-child) {
@@ -374,6 +378,7 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 .team-list-item:last-child {
   margin-right: 0px;
@@ -420,7 +425,7 @@ header {
 
   border-radius: 50%;
 
-  fill: var(--primary-text-color);
+  fill: var(--icon-color);
 }
 
 .social-link:hover,
@@ -429,7 +434,7 @@ header {
   fill: #ffffff;
 }
 
-.social-link:not(last-child) {
+.social-link-item:not(last-child) {
   margin-right: 10px;
 }
 
@@ -450,7 +455,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--primary-text-color);
+  fill: var(--icon-color);
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -482,6 +487,7 @@ footer {
 
 .page-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .adress-info {
@@ -616,7 +622,12 @@ address {
 
 .project-item:focus,
 .project-item:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
