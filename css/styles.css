@@ -20,6 +20,7 @@
   --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bcg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-border: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* html {
@@ -636,14 +637,11 @@ address {
 }
 
 .input-send {
-  display: flex;
   width: 358px;
   height: 50px;
   margin-right: 12px;
-  padding: 15px 295px 15px 16px;
+  padding-left: 16px;
 
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
@@ -870,6 +868,17 @@ a.project-item {
 
   width: 100%;
   height: 100%;
+
+  fill: #000000;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.btn-modal-close:hover,
+.btn-modal-close:focus {
+  fill: var(--accent-color);
+  transition: var(--transition-fill);
 }
 
 .order {
@@ -917,9 +926,10 @@ a.project-item {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 }
 
-.person-icon {
+.form-icon {
   display: inline-block;
   position: absolute;
   bottom: 11px;
@@ -930,37 +940,12 @@ a.project-item {
 
 .order-input:focus-within {
   border-color: #2196f3;
+  transition: var(--transition-border);
 }
 
-.order-label:focus-within > .person-icon {
+.order-label:focus-within > .form-icon {
   fill: var(--accent-color);
-}
-
-.order-label:focus-within > .person-phone {
-  fill: var(--accent-color);
-}
-
-.order-label:focus-within > .person-mail {
-  fill: var(--accent-color);
-}
-
-.phone-icon {
-  display: inline-block;
-  position: absolute;
-  bottom: 11px;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-}
-
-.email-icon {
-  display: inline-block;
-  position: absolute;
-  bottom: 11px;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-  fill: blue;
+  transition: var(--transition-fill);
 }
 
 textarea {
@@ -970,6 +955,12 @@ textarea {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+}
+
+textarea:focus-within {
+  border-color: #2196f3;
+  transition: var(--transition-border);
 }
 
 ::placeholder {
@@ -982,8 +973,8 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox-agreement {
-  display: flex;
+.checkbox {
+  display: inline-block;
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -993,8 +984,6 @@ textarea {
 .checkbox-text {
   margin-left: 8.38px;
 
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -1003,14 +992,32 @@ textarea {
 }
 
 .checkbox-text > a {
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
 
   text-decoration-line: underline;
   color: #2196f3;
+}
+
+.check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  background-image: url("../images/check-icon-1.svg");
+  background-size: contain;
+}
+
+.check-input:checked + .check-icon {
+  background-image: url("../images/check-icon-2.svg");
+  background-size: contain;
 }
 
 .order-btn {
@@ -1029,7 +1036,8 @@ textarea {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: none;
+  /* border: none; */
+  outline: none;
 }
 
 .order-btn:hover,
