@@ -510,8 +510,7 @@ header {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: var(--transition-fill);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), var(--transition-fill);
 }
 
 .client:hover,
@@ -611,6 +610,80 @@ address {
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+}
+
+.send {
+  margin-left: 93px;
+}
+
+.send-title {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.send-items {
+  display: flex;
+}
+
+.input-send {
+  display: flex;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 295px 15px 16px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background: var(--bcg-hero-footer-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.btn-send {
+  display: flex;
+  align-items: flex-end;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px 10px 29px;
+
+  background: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.btn-send span {
+  margin-right: 10px;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+  cursor: pointer;
+}
+
+.icon-send {
 }
 
 /* Портфолио */
@@ -743,6 +816,7 @@ a.project-item {
 }
 
 /* Модальное окно */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -764,6 +838,7 @@ a.project-item {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 
   min-width: 528px;
   min-height: 581px;
@@ -795,4 +870,161 @@ a.project-item {
 
   width: 100%;
   height: 100%;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-title {
+  margin-bottom: 12px;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.order-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.label-text {
+  margin-bottom: 4px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.order-input {
+  position: relative;
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.person-icon {
+  display: inline-block;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.order-input:focus-within {
+  border-color: #2196f3;
+}
+
+.order-label:focus-within > .person-icon {
+  background: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.phone-icon {
+  display: inline-block;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.email-icon {
+  display: inline-block;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+::placeholder {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-agreement {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkbox-text {
+  margin-left: 8.38px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.checkbox-text > a {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+
+.order-btn {
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  cursor: pointer;
 }

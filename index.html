@@ -393,13 +393,65 @@
                         </a>
                     </li>
                 </ul>
-            </div>     
-            
+            </div>
+            <form class="send">
+                <b class="send-title">Подпишитесь на рассылку</b>
+                <div class="send-items">
+                    <input type="text" name="E-mail" placeholder="E-mail" class="input-send">
+                    <button type="submit" class="btn-send">
+                        <span>Подписаться</span>
+                        <svg width="24" height="24" class="icon-send">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+
+            </form>           
         </div>
     </footer>
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <form class="order">
+                <b class="order-title">Оставьте свои данные, мы вам перезвоним</b>
+
+                
+                    <label class="order-label">
+                        <span class="label-text">Имя</span>
+                        <input type="text" name="name" class="order-input">
+                        <svg class="person-icon">
+                            <use href="./images/icons.svg#person"></use>
+                        </svg>
+                    </label>
+                                                          
+                    <label class="order-label">
+                        <span class="label-text">Телефон</span>
+                        <input type="tel" name="tel" class="order-input">
+                        <svg class="phone-icon">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg>                                         
+                    </label>
+                                                  
+                    <label class="order-label">
+                        <span class="label-text">Почта</span>
+                        <input type="e-mail" name="mail" class="order-input">
+                        <svg class="email-icon">
+                            <use href="./images/icons.svg#email"></use>
+                        </svg> 
+                    </label>
+                                    
+
+                <label for="comment" class="order-label">Комментарий</label>
+                <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+
+                <div class="checkbox-agreement">
+                    <input type="checkbox" name="" id="agreement">
+                    <label for="agreement" class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                </div>
+
+                <button type="submit" class="order-btn">Отправить</button>
+
+            </form>
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="btn-modal-close">
                     <use href="./images/icons.svg#btn-modal-close"></use>
