@@ -933,7 +933,14 @@ a.project-item {
 }
 
 .order-label:focus-within > .person-icon {
-  background: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.order-label:focus-within > .person-phone {
+  fill: var(--accent-color);
+}
+
+.order-label:focus-within > .person-mail {
   fill: var(--accent-color);
 }
 
@@ -953,6 +960,7 @@ a.project-item {
   left: 12px;
   width: 18px;
   height: 18px;
+  fill: blue;
 }
 
 textarea {
