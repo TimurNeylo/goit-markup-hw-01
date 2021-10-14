@@ -1,0 +1,40 @@
+.feature {
+  display: flex;
+
+  &__card {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: var(--main-gap);
+    }
+  }
+
+  &__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: var(--main-gap);
+    background-color: #f5f4fa;
+
+    &:not(last-child) {
+      margin-right: var(--main-gap);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-title {
+    margin-bottom: var(--secondary-gap);
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
