@@ -459,7 +459,7 @@ header {
 /* Оформление секции Наша команда */
 /* Социальные сети членов команды */
 
-.team-list__contacts {
+.social-links {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -468,11 +468,11 @@ header {
   align-items: center;
 }
 
-.team-list__contact:not(:last-child) {
+.social-links__gap:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-list__link {
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,14 +486,14 @@ header {
   transition: var(--transition-bcg), var(--transition-fill);
 }
 
-.team-list__link:hover,
-.team-list__link:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
 }
 
-.team-list__icon {
-}
+/* .social-link__icon {
+} */
 
 /* Секция Постоянные клиенты */
 
@@ -612,7 +612,11 @@ address {
   color: #ffffff;
 }
 
-.footer-link {
+.social-links--top {
+  margin-top: 20px;
+}
+
+.social-link--footer {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
 }
@@ -685,8 +689,8 @@ address {
   cursor: pointer;
 }
 
-.icon-send {
-}
+/* .icon-send {
+} */
 
 /* Портфолио */
 
@@ -748,8 +752,8 @@ a.project-set__link {
   display: block;
 }
 
-.project-card {
-}
+/* .project-card {
+} */
 
 .project-card__thumb {
   position: relative;
