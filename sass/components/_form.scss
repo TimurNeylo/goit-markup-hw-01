@@ -153,12 +153,12 @@ textarea {
   width: 16px;
   height: 15px;
 
-  background-image: url("/images/check-icon-1.svg");
+  background-image: url("../images/check-icon-1.svg");
   background-size: contain;
 }
 
 .check-input:checked + .check-icon {
-  background-image: url("/images/check-icon-2.svg");
+  background-image: url("../images/check-icon-2.svg");
   background-size: contain;
 }
 
