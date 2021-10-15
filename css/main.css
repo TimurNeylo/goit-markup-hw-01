@@ -946,6 +946,11 @@ textarea::placeholder {
   fill: #ffffff;
 }
 
+.social-link--footer {
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
 /* .social-link__icon {
 } */
 /*# sourceMappingURL=main.css.map */
