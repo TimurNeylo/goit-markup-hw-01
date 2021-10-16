@@ -1,0 +1,42 @@
+body {
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  letter-spacing: var(--main-letter-spacing);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

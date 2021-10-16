@@ -1,35 +1,11 @@
 @charset "UTF-8";
-/* Основнне цвета
-первичный цвет текста #757575;
-вторичный цвет текста #212121;
-цвет акцента #2196F3;
-
-цвет фона основной (секций) #F5F4FA;
-цвет фона героя и футера #2F303A;
-цвет фона хедера и фона карточек #FFFFFF;
-цвет иконок #AFB1B8
- */
-:root {
-  --primary-text-color: #757575;
-  --secondary-text-color: #212121;
-  --accent-color: #2196f3;
-  --bcg-hero-footer-color: #2f303a;
-  --icon-color: #afb1b8;
-  --main-gap: 30px;
-  --secondary-gap: 10px;
-  --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-bcg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-border: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 body {
   color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  letter-spacing: var(--main-letter-spacing);
 }
 
 a {
@@ -65,6 +41,35 @@ img {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+/* Основнне цвета
+первичный цвет текста #757575;
+вторичный цвет текста #212121;
+цвет акцента #2196F3;
+
+цвет фона основной (секций) #F5F4FA;
+цвет фона героя и футера #2F303A;
+цвет фона хедера и фона карточек #FFFFFF;
+цвет иконок #AFB1B8
+ */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --bcg-hero-footer-color: #2f303a;
+  --icon-color: #afb1b8;
+  --main-gap: 30px;
+  --secondary-gap: 10px;
+  --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bcg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-border: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --main-font: Roboto, sans-serif;
+  --main-font-style: normal;
+  --main-font-weight: 400;
+  --main-font-size: 14px;
+  --main-letter-spacing: 0.03em;
 }
 
 .container {
