@@ -1,15 +1,15 @@
 .about-us {
-  display: flex;
+  display: none;
 
-  &__card:not(:last-child) {
+  .about-us__card:not(:last-child) {
     margin-right: var(--main-gap);
   }
 
-  &__thumb {
+  .about-us__thumb {
     position: relative;
   }
 
-  &__textbox {
+  .about-us__textbox {
     width: 370px;
     padding: 27px;
 
@@ -19,7 +19,7 @@
     background: rgba(47, 48, 58, 0.8);
   }
 
-  &__text {
+  .about-us__text {
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;

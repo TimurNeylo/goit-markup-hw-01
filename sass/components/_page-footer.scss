@@ -5,7 +5,6 @@ footer {
 }
 
 .page-footer {
-  display: flex;
   align-items: baseline;
 }
 
@@ -81,7 +80,7 @@ address {
 .send-form {
   margin-left: 93px;
 
-  &__title {
+  .send-form__title {
     display: block;
 
     margin-bottom: 20px;
@@ -96,11 +95,10 @@ address {
     color: #ffffff;
   }
 
-  &__items {
-    display: flex;
+  .send-form__items {
   }
 
-  &__input {
+  .send-form__input {
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -116,7 +114,7 @@ address {
     border-radius: 4px;
   }
 
-  &__button {
+  .send-form__button {
     display: flex;
     align-items: flex-end;
     width: 200px;
@@ -133,7 +131,7 @@ address {
       cursor: pointer;
     }
   }
-  &__button span {
+  .send-form__button span {
     margin-right: 10px;
 
     font-family: Roboto;
