@@ -1,10 +1,10 @@
 body {
-  color: var(--primary-text-color);
-  font-family: var(--main-font);
-  font-style: var(--main-font-style);
-  font-weight: var(--main-font-weight);
-  font-size: var(--main-font-size);
-  letter-spacing: var(--main-letter-spacing);
+  color: $color-text-primary;
+  font-family: $font-family-main;
+  font-style: $font-style-main;
+  font-weight: $font-weight-main;
+  font-size: $font-size-main;
+  letter-spacing: $letter-spacing-main;
 }
 
 a {

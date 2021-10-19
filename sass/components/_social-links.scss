@@ -6,15 +6,15 @@
   justify-content: center;
   align-items: center;
 
-  &__gap:not(:last-child) {
+  .social-links__gap:not(:last-child) {
     margin-right: 10px;
   }
 
-  &--top {
+  .social-links--top {
     margin-top: 20px;
   }
 
-  &--footer {
+  .social-links--footer {
     background-color: rgba(255, 255, 255, 0.1);
     fill: #ffffff;
   }
@@ -29,17 +29,17 @@
 
   border-radius: 50%;
 
-  fill: var(--icon-color);
+  fill: $color-icon;
 
-  transition: var(--transition-bcg), var(--transition-fill);
+  transition: $transition-bcg, $transition-fill;
 
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: $color-accent;
     fill: #ffffff;
   }
 
-  &--footer {
+  .social-link--footer {
     background: rgba(255, 255, 255, 0.1);
     fill: #ffffff;
   }

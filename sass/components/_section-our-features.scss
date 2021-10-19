@@ -1,0 +1,28 @@
+.feature__card:not(:last-child) {
+  margin-bottom: $gap-main;
+}
+
+.feature__thumb {
+  margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #f5f4fa;
+}
+
+.feature__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature__title {
+  text-align: center;
+  margin-bottom: $gap-secondary;
+
+  color: $color-text-secondary;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
